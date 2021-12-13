@@ -6,6 +6,7 @@ import hello.core.member.Member;
 import hello.core.member.MemberService;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 class OrderServiceTest {
@@ -21,6 +22,7 @@ class OrderServiceTest {
     }
 
     @Test
+    @DisplayName("VIP가 주문하면 10% 할인되어야 한다")
     void createOrder() {
         // given
         Long memberId = 1L;
