@@ -29,7 +29,7 @@ public class AllBeanTest {
         assertThat(discountPrice).isEqualTo(1000);
 
         int rateDiscountPrice = discountService.discount(memberA, 20000, "rateDiscountPolicy");
-        assertThat(rateDiscountPrice).isInstanceOf(DiscountService.class);
+        assertThat(discountService).isInstanceOf(DiscountService.class);
         assertThat(rateDiscountPrice).isEqualTo(2000);
 
     }
